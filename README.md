@@ -69,7 +69,7 @@ REST アダプタ接続を作成する手順は次のとおりです。
     | 入力項目 | 入力する値 |
     |:----|:----|
     | **「名前」** | `RESAS-API` |
-    | **「識別子」** | `RESAS-API` （**「名前」**を入力すると自動的に設定されます） |
+    | **「識別子」** | `RESAS-API` （「名前」を入力すると自動的に設定されます） |
     | **「ロール」** | **「呼び出し」** を選択 |
 
     入力したら右下の **「作成」** ボタンをクリックします。
@@ -269,7 +269,6 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
     | 入力項目 | 入力する値 |
     |:----|:----|
     | **「エンドポイントにどのような名前をつけますか。」** | `GetCities` |
-    | **「このエンドポイントでは何が行われますか。」** | `RESAS-API から都道府県データを取得` |
     | **「エンドポイントの相対リソースURIは何ですか。」** | `/cities` |
     | **「エンドポイントでどのアクションを実行しますか。」** | **「GET」** を選択 |
     | **「このエンドポイントのパラメータを追加して確認」** | チェックする |
@@ -358,7 +357,7 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
     **「Sources」** ツリーの **「$prefCode」** を、 **「Targets」** ツリーの **「prefCode」** が直線で結ばれます。
     ページの右上にある **「検証」** ボタンをクリックし、 **「マッピングは有効で、使用する準備ができています。」** というメッセージが表示されたら、 **「閉じる」** ボタンをクリックします。
 
-1.  これで、RESAS-API の都道府県一覧を取得するための設定が終わりました。
+1.  これで、RESAS-API の市区町村一覧を取得するための設定が終わりました。
     ここまでの設定を保存するために、ページの右上に表示される **「保存」** ボタンをクリックします。
 
 ### Oracle ADW へのデータの書き込み
@@ -374,7 +373,6 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
     |入力項目|入力する値|
     |:----|:----|
     | **「エンドポイントにどのような名前をつけますか。」** | `MergeCities` |
-    | **「このエンドポイントでは何が行われますか。」** | `都道府県データを ADW に保存` |
     | **「どの操作を実行しますか。」** | **「Perform an Operation on a Table」** を選択 |
     | **「どの操作を表で実行しますか。」** | **「Insert or Update (Merge)」** を選択 |
 
@@ -399,7 +397,7 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
       次のセクションで設定します。
     - **「MergeCities」** は、これまでに設定した Oracle ADW の呼び出しの設定です。
 
-1.  これで、RESAS-API の都道府県一覧のデータを Oracle ADW に保存するための設定が終わりました。
+1.  これで、RESAS-API の市区町村一覧のデータを Oracle ADW に保存するための設定が終わりました。
     ここまでの設定を保存するために、ページの右上に表示される **「保存」** ボタンをクリックします。
 
 ### データ・マッピングの設定
@@ -414,11 +412,11 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
 
 1.  **「Sources」** ペインの **「$GetCities」** → **「executeResponse」** → **「response-wrapper」** → **「result」** → **「prefCode」** を、 **「Target」** ペインの **「CitiesCollection」** → **「Cities」** → **「prefCode」** にドラッグ＆ドロップします。
 
-1.  **「Sources」** ペインの **「$GetPrefectures」** → **「esecuteResponse」** → **「response-wrapper」** → **「result」** → **「cityCode」** を、 **「Target」** ペインの **「CitiesCollection」** → **「Cities」** → **「cityCode」** にドラッグ＆ドロップします。
+1.  **「Sources」** ペインの **「$GetCities」** → **「esecuteResponse」** → **「response-wrapper」** → **「result」** → **「cityCode」** を、 **「Target」** ペインの **「CitiesCollection」** → **「Cities」** → **「cityCode」** にドラッグ＆ドロップします。
 
-1.  **「Sources」** ペインの **「$GetPrefectures」** → **「esecuteResponse」** → **「response-wrapper」** → **「result」** → **「cityName」** を、 **「Target」** ペインの **「CitiesCollection」** → **「Cities」** → **「cityName」** にドラッグ＆ドロップします。
+1.  **「Sources」** ペインの **「$GetCities」** → **「esecuteResponse」** → **「response-wrapper」** → **「result」** → **「cityName」** を、 **「Target」** ペインの **「CitiesCollection」** → **「Cities」** → **「cityName」** にドラッグ＆ドロップします。
 
-1.  **「Sources」** ペインの **「$GetPrefectures」** → **「esecuteResponse」** → **「response-wrapper」** → **「result」** → **「bigCityFlag」** を、 **「Target」** ペインの **「PrefecturesCollection」** → **「Cities」** → **「bigCityFlag」** にドラッグ＆ドロップします。
+1.  **「Sources」** ペインの **「$GetCities」** → **「esecuteResponse」** → **「response-wrapper」** → **「result」** → **「bigCityFlag」** を、 **「Target」** ペインの **「CitiescturesCollection」** → **「Cities」** → **「bigCityFlag」** にドラッグ＆ドロップします。
 
 1.  画面左上にある **「検証」** ボタンをクリックして、マッピングが有効かどうかを確認します。
     画面の上部に **「マッピングは有効で使用する準備ができています。」** というメッセージが表示されたら、 **「閉じる」** ボタンをクリックします。
