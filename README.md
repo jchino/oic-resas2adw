@@ -62,15 +62,27 @@ Oracle Integration Cloud は、多数のアダプタを提供しており、ア�
 最初に作成するのは、 RESAS-API を呼び出すための REST アダプタ接続です。
 REST アダプタ接続を作成する手順は次のとおりです。
 
-1.  Oracle Integration Cloud の **「ようこそ」** または **「ホーム」** ページを開いている場合は、ナビゲーション・ペインで **「統合」** → **「接続」** をクリックします。
+1.  Oracle Integration Cloud の **「ようこそ」** または **「ホーム」** ページを開いている場合は、ナビゲーション・ペインで **「統合」** をクリックします。
+
+    <img src="images/ss01-02.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+
+    ナビゲーション・ペインに **「統合」** に関連するメニューが表示されます。
+    **「接続」** をクリックします。
+
+    <img src="images/ss01-03.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
 
 1.  Oracle Integration Cloud の **「接続」** ページが表示されたら、ページの右上にある **「作成」** ボタンをクリックします。
 
+    <img src="images/ss01-04.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+
 1.  **「接続の作成 - アダプタの選択」** ボックスが表示されます。
 
-1.  **「検索」** フィールドに `REST` と入力して、表示を絞り込みます。
+    <img src="images/ss01-05.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
 
+1.  **「検索」** フィールドに `REST` と入力して、表示を絞り込みます。
     表示された **「REST」** アイコンをクリックしてから右下の **「選択」** ボタンをクリックします。
+
+    <img src="images/ss01-06.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
 
 1.  **「接続の作成」** ボックスが表示されます。
     作成する接続の基本情報を入力します。
@@ -80,6 +92,8 @@ REST アダプタ接続を作成する手順は次のとおりです。
     | **「名前」** | `RESAS-API` |
     | **「識別子」** | `RESAS-API` （「名前」を入力すると自動的に設定されます） |
     | **「ロール」** | **「呼び出し」** を選択 |
+
+    <img src="images/ss01-07.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
 
     入力したら右下の **「作成」** ボタンをクリックします。
 
@@ -94,6 +108,8 @@ REST アダプタ接続を作成する手順は次のとおりです。
     | **「アウトバンド接続の双方向SSLの有効化」** | 入力しない |
     | **「アイデンティティ・キーストア・エイリアス名」** | 入力しない |
 
+    <img src="images/ss01-08.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+
 1.  **「セキュリティ」** セクションでは、次のように値を入力します。
 
     | 入力項目 | 入力する値 |
@@ -102,10 +118,21 @@ REST アダプタ接続を作成する手順は次のとおりです。
     | **「APIキー」** | RESAS-API から発行された API キーを入力 |
     | **「APIキーの用途」** | `-H X-API-KEY: ${api-key}` |
 
-1.  **「接続プロパティ」** と **「セキュリティ」** の値を入力したら、ページの右上に表示されている **「テスト」** ボタンをクリックします。
+    <img src="images/ss01-09.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+
+1.  **「接続プロパティ」** と **「セキュリティ」** セクションの値を入力したら、ページの右上に表示されている **「テスト」** ボタンをクリックします。
+
+    <img src="images/ss01-11.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+
     **「接続プロパティ」** で指定した値が正しければ、ページの右上に成功したことを表すメッセージ **「接続 *<接続名>* が正常にテストされました。」** が表示されます。
 
 1.  テストに成功したら、ページの右上に表示されている **「保存」** ボタンをクリックします。
+
+    <img src="images/ss01-12.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+
+1.  保存できたら、ページの左上に表示されている **「<」** （戻る）アイコンをクリックして、 **「接続」** ページに戻ります。
+
+    <img src="images/ss01-13.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
 
 ### Oracle ADW アダプタを使用した接続
 
