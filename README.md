@@ -64,25 +64,25 @@ REST アダプタ接続を作成する手順は次のとおりです。
 
 1.  Oracle Integration Cloud の **「ようこそ」** または **「ホーム」** ページを開いている場合は、ナビゲーション・ペインで **「統合」** をクリックします。
 
-    <img src="images/ss01-02.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+    ![Oracle Integration Cloud](images/ss01-02.png)
 
     ナビゲーション・ペインに **「統合」** に関連するメニューが表示されます。
     **「接続」** をクリックします。
 
-    <img src="images/ss01-03.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+    ![Oracle Integration Cloud](images/ss01-03.png)
 
 1.  Oracle Integration Cloud の **「接続」** ページが表示されたら、ページの右上にある **「作成」** ボタンをクリックします。
 
-    <img src="images/ss01-04.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+    ![Oracle Integration Cloud](images/ss01-04.png)
 
 1.  **「接続の作成 - アダプタの選択」** ボックスが表示されます。
 
-    <img src="images/ss01-05.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+    ![Oracle Integration Cloud](images/ss01-05.png)
 
 1.  **「検索」** フィールドに `REST` と入力して、表示を絞り込みます。
     表示された **「REST」** アイコンをクリックしてから右下の **「選択」** ボタンをクリックします。
 
-    <img src="images/ss01-06.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+    ![Oracle Integration Cloud](images/ss01-06.png)
 
 1.  **「接続の作成」** ボックスが表示されます。
     作成する接続の基本情報を入力します。
@@ -93,7 +93,7 @@ REST アダプタ接続を作成する手順は次のとおりです。
     | **「識別子」** | `RESAS-API` （「名前」を入力すると自動的に設定されます） |
     | **「ロール」** | **「呼び出し」** を選択 |
 
-    <img src="images/ss01-07.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+    ![Oracle Integration Cloud](images/ss01-07.png)
 
     入力したら右下の **「作成」** ボタンをクリックします。
 
@@ -108,7 +108,7 @@ REST アダプタ接続を作成する手順は次のとおりです。
     | **「アウトバンド接続の双方向SSLの有効化」** | 入力しない |
     | **「アイデンティティ・キーストア・エイリアス名」** | 入力しない |
 
-    <img src="images/ss01-08.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+    ![Oracle Integration Cloud](images/ss01-08.png)
 
 1.  **「セキュリティ」** セクションでは、次のように値を入力します。
 
@@ -118,21 +118,21 @@ REST アダプタ接続を作成する手順は次のとおりです。
     | **「APIキー」** | RESAS-API から発行された API キーを入力 |
     | **「APIキーの用途」** | `-H X-API-KEY: ${api-key}` |
 
-    <img src="images/ss01-09.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+    ![Oracle Integration Cloud](images/ss01-09.png)
 
 1.  **「接続プロパティ」** と **「セキュリティ」** セクションの値を入力したら、ページの右上に表示されている **「テスト」** ボタンをクリックします。
 
-    <img src="images/ss01-11.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+    ![Oracle Integration Cloud](images/ss01-11.png)
 
-    **「接続プロパティ」** で指定した値が正しければ、ページの右上に成功したことを表すメッセージ **「接続 *<接続名>* が正常にテストされました。」** が表示されます。
+    **「接続プロパティ」** で指定した値が正しければ、ページの右上に成功したことを表すメッセージ **「接続 <接続名> が正常にテストされました。」** が表示されます。
 
 1.  テストに成功したら、ページの右上に表示されている **「保存」** ボタンをクリックします。
 
-    <img src="images/ss01-12.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+    ![Oracle Integration Cloud](images/ss01-12.png)
 
 1.  保存できたら、ページの左上に表示されている **「<」** （戻る）アイコンをクリックして、 **「接続」** ページに戻ります。
 
-    <img src="images/ss01-13.png" alt="Oracle Integration Cloud" style="box-shadow:3px 3px 3px gray">
+    ![Oracle Integration Cloud](images/ss01-13.png)
 
 ### Oracle ADW アダプタを使用した接続
 
@@ -201,9 +201,13 @@ Oracle ADW のデータベースにアクセスするには、ウォレット・
 接続を作成する手順は次のとおりです。
 
 1.  Oralce Integration Cloud にログインし、 **「接続」** ページを開きます。
+    **「接続」** ページの右上にある **「作成」** ボタンをクリックします。
 
-1.  **「接続」** ページの右上にある **「作成」** ボタンをクリックします。
-    **「接続の作成 - アダプタの選択」** ボックスが表示されたら、 **「検索」** フィールドに `ADW` と入力して、表示を絞り込みます。
+    ![Oracle Integration Cloud](images/ss03-01.png)
+
+1.  **「接続の作成 - アダプタの選択」** ボックスが表示されたら、 **「検索」** フィールドに `ADW` と入力して、表示を絞り込みます。
+
+    ![Oracle Integration Cloud](images/ss03-02.png)
 
     表示された **「Oracle ADW」** アイコンをクリックしてから右下の **「選択」** ボタンをクリックします。
 
@@ -215,6 +219,8 @@ Oracle ADW のデータベースにアクセスするには、ウォレット・
     | **「名前」** | My ADW |
     | **「識別子」** | MY_ADW |
     | **「ロール」** | **「呼び出し」** を選択 |
+
+    ![Oracle Integration Cloud](images/ss03-03.png)
 
     入力したら右下の **「作成」** ボタンをクリックします。
 
@@ -228,6 +234,8 @@ Oracle ADW のデータベースにアクセスするには、ウォレット・
     | **「SID」** | 入力しない |
     | **「Service Name」** | `<DB名>_medium` （`<DB名>` は、使用する環境のものと置き換えてください） |
 
+    ![Oracle Integration Cloud](images/ss03-04.png)
+
 1.  **「セキュリティ」** セクションでは、次のように値を入力します。
 
     | 入力項目 | 入力する値 |
@@ -238,10 +246,19 @@ Oracle ADW のデータベースにアクセスするには、ウォレット・
     | **「データベース・サービス・ユーザー名」** | ADW インスタンスのユーザー名を入力 |
     | **「パスワード」** | ADW インスタンスのユーザーのパスワードを入力 |
 
+    ![Oracle Integration Cloud](images/ss03-05.png)
+
 1.  **「接続プロパティ」** と **「セキュリティ」** の値を入力したら、ページの右上に表示されている **「テスト」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss03-06.png)
+
     接続のテストに成功すると、 **「接続 *<接続名>* が正常にテストされました。」** というメッセージがページの右上に表示されます。
 
-    テストに成功したら、ページの右上に表示されている **「保存」** ボタンをクリックします。
+1.  テストに成功したら、ページの右上に表示されている **「保存」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss03-07.png)
+
+    保存できたら、ページの左上にある **「<」** （戻る） アイコンをクリックして、**「接続」** ページに戻ります。
 
 ## 統合の作成
 
