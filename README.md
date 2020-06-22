@@ -459,7 +459,11 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
 1.  キャンバス・ビューの右端に表示されている **「呼び出し」** アイコンをクリックします。
     **「Oracle ADW」** をクリックして、『Oracle ADW アダプタを使用した接続』で作成した接続を見つけます。
 
+    ![Oracle Integration Cloud](images/ss06-01.png)
+
 1.  『Oracle ADW アダプタを使用した接続』で作成した接続を、キャンバス・ビューの **「GetCities」** アイコンから **「停止」** アイコン（背景が緑色のアイコン）に向けられた矢印の上にドラッグし、表示された **「＋」** マークの上でドロップします。
+
+    ![Oracle Integration Cloud](images/ss06-02.png)
 
 1.  **「Oracle Adapter Configuration Wizard」** が表示されます。
     次のように **「基本情報」** を入力します。
@@ -470,6 +474,8 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
     | **「どの操作を実行しますか。」** | **「Perform an Operation on a Table」** を選択 |
     | **「どの操作を表で実行しますか。」** | **「Insert or Update (Merge)」** を選択 |
 
+    ![Oracle Integration Cloud](images/ss06-03.png)
+
     入力し終わったら、 **「次」** ボタンをクリックします。
 
 1.  **「Oracle Adapter Configuration Wizard」** の **「表での操作」** が表示されます。
@@ -477,15 +483,23 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
 
     **「使用可能」** リストに **「CITIES」** が表示されています。
     **「CITIES」** を選択した状態で、 **「>」** ボタンをクリックします。
-    **「CITIES」** が、 **「選択済み」** リストに異動したことを確認したら、 **「インポート」** ボタンをクリックします。
+    **「CITIES」** が、 **「選択済み」** リストに移動したことを確認したら、 **「インポート」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss06-04.png)
 
 1.  **「親データベース表の選択」** が表示されます。
     今回はデータを保存するのテーブルは `CITIES` だけなので、初期状態のままでウィザードの右上にある **「次」** ボタンをクリックします。
 
+    ![Oracle Integration Cloud](images/ss06-05.png)
+
 1.  **「Oracle Adapter Configuration Wizard」** の **「サマリー」** が表示されます。
     ウィザードの右上にある **「完了」** ボタンをクリックします。
 
+    ![Oracle Integration Cloud](images/ss06-06.png)
+
 1.  キャンバス・ビューは次の図のような表示になっています。
+
+    ![Oracle Integration Cloud](images/ss06-07.png)
 
     - **「マップ先 MergeCities」** は、 Oracle ADW に保存するデータのマッピングの設定を行います。
       次のセクションで設定します。
