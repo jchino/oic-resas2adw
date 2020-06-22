@@ -515,16 +515,24 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
 1.  キャンバス・ビューで、 **「マップ先 MergeCities」** を選択します。
     表示される **「編集」** アイコンをクリックします。
 
+    ![Oracle Integration Cloud](images/ss07-01.png)
+
 1.  データのマッピングの設定を行うためのマッパーが表示されます。
-    マッパーの画面左側に表示されている **「Sources」** ペインの **「$GetCities」** → **「executeResponse」** → **「response-wrapper」** → **「result」** と、画面右側に表示されている **「Target」** ペインの **「CitiesCollection」** → **「Cities」** にドラッグ＆ドロップします。
+    マッパーの画面左側に表示されている **「Sources」** ペインの **「$GetCities」** → **「executeResponse」** → **「response-wrapper」** → **「result」** を、画面右側に表示されている **「Target」** ペインの **「CitiesCollection」** → **「Cities」** にドラッグ＆ドロップします。
 
-1.  **「Sources」** ペインの **「$GetCities」** → **「executeResponse」** → **「response-wrapper」** → **「result」** → **「prefCode」** を、 **「Target」** ペインの **「CitiesCollection」** → **「Cities」** → **「prefCode」** にドラッグ＆ドロップします。
+    ![Oracle Integration Cloud](images/ss07-03.png)
 
-1.  **「Sources」** ペインの **「$GetCities」** → **「esecuteResponse」** → **「response-wrapper」** → **「result」** → **「cityCode」** を、 **「Target」** ペインの **「CitiesCollection」** → **「Cities」** → **「cityCode」** にドラッグ＆ドロップします。
+1.  **「Sources」** ペインの **「prefCode」** を、 **「Target」** ペインの **「prefCode」** にドラッグ＆ドロップします。
 
-1.  **「Sources」** ペインの **「$GetCities」** → **「esecuteResponse」** → **「response-wrapper」** → **「result」** → **「cityName」** を、 **「Target」** ペインの **「CitiesCollection」** → **「Cities」** → **「cityName」** にドラッグ＆ドロップします。
+    ![Oracle Integration Cloud](images/ss07-04.png)
 
-1.  **「Sources」** ペインの **「$GetCities」** → **「esecuteResponse」** → **「response-wrapper」** → **「result」** → **「bigCityFlag」** を、 **「Target」** ペインの **「CitiescturesCollection」** → **「Cities」** → **「bigCityFlag」** にドラッグ＆ドロップします。
+1.  **「Sources」** ペインの **「cityCode」** を、 **「Target」** ペインの **「cityCode」** にドラッグ＆ドロップします。
+
+1.  **「Sources」** ペインの **「cityName」** を、 **「Target」** ペインの **「cityName」** にドラッグ＆ドロップします。
+
+1.  **「Sources」** ペインの **「bigCityFlag」** を、 **「Target」** ペインの **「bigCityFlag」** にドラッグ＆ドロップします。
+
+    ![Oracle Integration Cloud](images/ss07-07.png)
 
 1.  画面左上にある **「検証」** ボタンをクリックして、マッピングが有効かどうかを確認します。
     画面の上部に **「マッピングは有効で使用する準備ができています。」** というメッセージが表示されたら、 **「閉じる」** ボタンをクリックします。
