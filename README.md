@@ -326,7 +326,11 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
     ロールが呼び出しに設定されている接続のリストが表示されます。
     **「REST」** をクリックして、『RESAS-API 呼び出しのための REST アダプタ接続』で作成した接続を見つけます。
 
+    ![Oracle Integration Cloud](images/ss05-01.png)
+
 1.  『RESAS-API 呼び出しのための REST アダプタ接続』で作成した接続を、キャンバス・ビューの **「スケジュール」** アイコンから **「停止」** アイコン（背景が緑色のアイコン）に向けられた矢印の上にドラッグし、表示された **「＋」** マークの上でドロップします。
+
+    ![Oracle Integration Cloud](images/ss05-02.png)
 
 1.  **「REST エンドポイントの構成」** ボックスが表示されます。
     **「基本情報」** では、次のように入力します。
@@ -339,6 +343,8 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
     | **「このエンドポイントのパラメータを追加して確認」** | チェックする |
     | **「このエンドポイントを構成してレスポンスを受信」** | チェックする |
 
+    ![Oracle Integration Cloud](images/ss05-03.png)
+
     入力したら、**「REST エンドポイントの構成」** ボックスの右上の方にある **「次」** ボタンをクリックします。
 
 1.  **「REST エンドポイントの構成」** ボックスの **「リクエスト・パラメータ」** では、RESAS-API を呼び出す際に指定する問合せパラメータを指定します。
@@ -349,10 +355,14 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
     | **「名前」** | `prefCode` |
     | **「データ型」** | **「integer」** を選択 |
 
+    ![Oracle Integration Cloud](images/ss05-04.png)
+
     入力し終わったら、**「次」** ボタンをクリックします。
 
 1.  **「REST エンドポイントの構成」** ボックスの **「レスポンス」** では、 REST-API から返ってくるレスポンスの形式を指定します。
     **「レスポンス・ペイロード」** で **「JSONサンプル」** を選択してから、 **「<<< inline >>>」** リンクをクリックします。
+
+    ![Oracle Integration Cloud](images/ss05-05.png)
 
 1.  **「REST エンドポイントの構成」** ボックスの **「Enter Sample JSON」** に、RESAS-API の市区町村一覧が返すレスポンスのサンプルを入力します。
     [RESAS-API の市区町村一覧のドキュメント](https://opendata.resas-portal.go.jp/docs/api/v1/cities.html) の **「sample」** セクションの JSON のコードブロックか、次のコードブロックをコピーして、**「Enter Sample JSON」** のテキストエリアに、ペーストします。
@@ -394,20 +404,30 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
     }
     ```
 
+    ![Oracle Integration Cloud](images/ss05-07.png)
+
     **「OK」** ボタンをクリックします。
 
 1.  **「REST エンドポイントの構成」** ボックスの右上にある **「次」** ボタンをクリックします。
 
+    ![Oracle Integration Cloud](images/ss05-08.png)
+
 1.  **「REST エンドポイントの構成」** ボックスの **「サマリー」** が表示されます。
     右上に表示される **「完了」** ボタンをクリックします。
 
+    ![Oracle Integration Cloud](images/ss05-09.png)
+
 1.  キャンバス・ビューは次の図のような表示になっています。
+
+    ![Oracle Integration Cloud](images/ss05-10.png)
 
     - **「マップ先 GetCities」** は、REST API のリクエストにパラメータを指定する必要がある場合に使用するマッピングです。
       このチュートリアルでは、スケジュール・パラメータ `prefCode` で指定した値を RESAS-API を呼び出す際に指定する問い合わせパラメータにマップする設定を行います。
     - **「GetCities」** は、これまでに設定した REST API の呼び出しの設定です。
 
 1.  キャンバス・ビューで **「マップ先 GetCities」** を選択し、表示された **「編集」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss05-11.png)
 
 1.  **「マップ先 GetCities」** ページが表示されます。
 
@@ -419,8 +439,17 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
 
 1.  **「Sources」** ツリーの **「$prefCode」** を、 **「Targets」** ツリーの **「prefCode」** の上にドラッグ＆ドロップします。
 
+    ![Oracle Integration Cloud](images/ss05-12.png)
+
     **「Sources」** ツリーの **「$prefCode」** を、 **「Targets」** ツリーの **「prefCode」** が直線で結ばれます。
-    ページの右上にある **「検証」** ボタンをクリックし、 **「マッピングは有効で、使用する準備ができています。」** というメッセージが表示されたら、 **「閉じる」** ボタンをクリックします。
+
+1.  ページの右上にある **「検証」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss05-13.png)
+
+1.  **「マッピングは有効で、使用する準備ができています。」** というメッセージが表示されたら、 **「閉じる」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss05-14.png)
 
 1.  これで、RESAS-API の市区町村一覧を取得するための設定が終わりました。
     ここまでの設定を保存するために、ページの右上に表示される **「保存」** ボタンをクリックします。
