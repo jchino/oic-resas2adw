@@ -62,15 +62,27 @@ Oracle Integration Cloud は、多数のアダプタを提供しており、ア�
 最初に作成するのは、 RESAS-API を呼び出すための REST アダプタ接続です。
 REST アダプタ接続を作成する手順は次のとおりです。
 
-1.  Oracle Integration Cloud の **「ようこそ」** または **「ホーム」** ページを開いている場合は、ナビゲーション・ペインで **「統合」** → **「接続」** をクリックします。
+1.  Oracle Integration Cloud の **「ようこそ」** または **「ホーム」** ページを開いている場合は、ナビゲーション・ペインで **「統合」** をクリックします。
+
+    ![Oracle Integration Cloud](images/ss01-02.png)
+
+    ナビゲーション・ペインに **「統合」** に関連するメニューが表示されます。
+    **「接続」** をクリックします。
+
+    ![Oracle Integration Cloud](images/ss01-03.png)
 
 1.  Oracle Integration Cloud の **「接続」** ページが表示されたら、ページの右上にある **「作成」** ボタンをクリックします。
 
+    ![Oracle Integration Cloud](images/ss01-04.png)
+
 1.  **「接続の作成 - アダプタの選択」** ボックスが表示されます。
 
-1.  **「検索」** フィールドに `REST` と入力して、表示を絞り込みます。
+    ![Oracle Integration Cloud](images/ss01-05.png)
 
+1.  **「検索」** フィールドに `REST` と入力して、表示を絞り込みます。
     表示された **「REST」** アイコンをクリックしてから右下の **「選択」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss01-06.png)
 
 1.  **「接続の作成」** ボックスが表示されます。
     作成する接続の基本情報を入力します。
@@ -80,6 +92,8 @@ REST アダプタ接続を作成する手順は次のとおりです。
     | **「名前」** | `RESAS-API` |
     | **「識別子」** | `RESAS-API` （「名前」を入力すると自動的に設定されます） |
     | **「ロール」** | **「呼び出し」** を選択 |
+
+    ![Oracle Integration Cloud](images/ss01-07.png)
 
     入力したら右下の **「作成」** ボタンをクリックします。
 
@@ -94,6 +108,8 @@ REST アダプタ接続を作成する手順は次のとおりです。
     | **「アウトバンド接続の双方向SSLの有効化」** | 入力しない |
     | **「アイデンティティ・キーストア・エイリアス名」** | 入力しない |
 
+    ![Oracle Integration Cloud](images/ss01-08.png)
+
 1.  **「セキュリティ」** セクションでは、次のように値を入力します。
 
     | 入力項目 | 入力する値 |
@@ -102,10 +118,21 @@ REST アダプタ接続を作成する手順は次のとおりです。
     | **「APIキー」** | RESAS-API から発行された API キーを入力 |
     | **「APIキーの用途」** | `-H X-API-KEY: ${api-key}` |
 
-1.  **「接続プロパティ」** と **「セキュリティ」** の値を入力したら、ページの右上に表示されている **「テスト」** ボタンをクリックします。
-    **「接続プロパティ」** で指定した値が正しければ、ページの右上に成功したことを表すメッセージ **「接続 *<接続名>* が正常にテストされました。」** が表示されます。
+    ![Oracle Integration Cloud](images/ss01-09.png)
+
+1.  **「接続プロパティ」** と **「セキュリティ」** セクションの値を入力したら、ページの右上に表示されている **「テスト」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss01-11.png)
+
+    **「接続プロパティ」** で指定した値が正しければ、ページの右上に成功したことを表すメッセージ **「接続 <接続名> が正常にテストされました。」** が表示されます。
 
 1.  テストに成功したら、ページの右上に表示されている **「保存」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss01-12.png)
+
+1.  保存できたら、ページの左上に表示されている **「<」** （戻る）アイコンをクリックして、 **「接続」** ページに戻ります。
+
+    ![Oracle Integration Cloud](images/ss01-13.png)
 
 ### Oracle ADW アダプタを使用した接続
 
@@ -174,9 +201,13 @@ Oracle ADW のデータベースにアクセスするには、ウォレット・
 接続を作成する手順は次のとおりです。
 
 1.  Oralce Integration Cloud にログインし、 **「接続」** ページを開きます。
+    **「接続」** ページの右上にある **「作成」** ボタンをクリックします。
 
-1.  **「接続」** ページの右上にある **「作成」** ボタンをクリックします。
-    **「接続の作成 - アダプタの選択」** ボックスが表示されたら、 **「検索」** フィールドに `ADW` と入力して、表示を絞り込みます。
+    ![Oracle Integration Cloud](images/ss03-01.png)
+
+1.  **「接続の作成 - アダプタの選択」** ボックスが表示されたら、 **「検索」** フィールドに `ADW` と入力して、表示を絞り込みます。
+
+    ![Oracle Integration Cloud](images/ss03-02.png)
 
     表示された **「Oracle ADW」** アイコンをクリックしてから右下の **「選択」** ボタンをクリックします。
 
@@ -188,6 +219,8 @@ Oracle ADW のデータベースにアクセスするには、ウォレット・
     | **「名前」** | My ADW |
     | **「識別子」** | MY_ADW |
     | **「ロール」** | **「呼び出し」** を選択 |
+
+    ![Oracle Integration Cloud](images/ss03-03.png)
 
     入力したら右下の **「作成」** ボタンをクリックします。
 
@@ -201,6 +234,8 @@ Oracle ADW のデータベースにアクセスするには、ウォレット・
     | **「SID」** | 入力しない |
     | **「Service Name」** | `<DB名>_medium` （`<DB名>` は、使用する環境のものと置き換えてください） |
 
+    ![Oracle Integration Cloud](images/ss03-04.png)
+
 1.  **「セキュリティ」** セクションでは、次のように値を入力します。
 
     | 入力項目 | 入力する値 |
@@ -211,10 +246,19 @@ Oracle ADW のデータベースにアクセスするには、ウォレット・
     | **「データベース・サービス・ユーザー名」** | ADW インスタンスのユーザー名を入力 |
     | **「パスワード」** | ADW インスタンスのユーザーのパスワードを入力 |
 
+    ![Oracle Integration Cloud](images/ss03-05.png)
+
 1.  **「接続プロパティ」** と **「セキュリティ」** の値を入力したら、ページの右上に表示されている **「テスト」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss03-06.png)
+
     接続のテストに成功すると、 **「接続 *<接続名>* が正常にテストされました。」** というメッセージがページの右上に表示されます。
 
-    テストに成功したら、ページの右上に表示されている **「保存」** ボタンをクリックします。
+1.  テストに成功したら、ページの右上に表示されている **「保存」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss03-07.png)
+
+    保存できたら、ページの左上にある **「<」** （戻る） アイコンをクリックして、**「接続」** ページに戻ります。
 
 ## 統合の作成
 
@@ -229,12 +273,16 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
 1.  Oralce Integration Cloud にログインします。
     **「接続」** ページを開いている場合は、ナビゲーション・ペインで **「統合」** をクリックします。
 
-    **「ようこそ」** または **「ホーム」** ページを開いている場合は、ナビゲーション・ペインで **「統合」** をクリックしてから、 **「統合」** を選択します。
+    **「ようこそ」** または **「ホーム」** ページを開いている場合は、ナビゲーション・ペインで **「統合」** をクリックして **「統合」** のメニューを開き、 **「統合」** を選択します。
 
 1.  **「統合」** ページが表示されたら、ページの右上にある **「作成」** ボタンをクリックします。
 
+    ![Oracle Integration Cloud](images/ss04-01.png)
+
 1.  **「統合スタイルの選択」** ボックスが表示されます。
     **「スケジュールされたオーケストレーション」** をクリックしてから、ボックスの右下にある **「作成」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss04-02.png)
 
 1.  **「新規統合の作成」** ボックスが表示されます。
     次の情報を入力する必要があります。
@@ -248,17 +296,27 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
     | **「この統合では何が行われますか。」** | 入力しない |
     | **「Which keyword defines this integration」** | 入力しない |
 
+    ![Oracle Integration Cloud](images/ss04-03.png)
+
     入力したら右下の **「作成」** ボタンをクリックします。
 
 1.  統合が作成されると、キャンバス・ビューで表示されます。
     **「レイアウト」** を初期状態の **「垂直」** から **「水平」** に変更します。
 
+    ![Oracle Integration Cloud](images/ss04-04.png)
+
 1.  **「スケジュール」** アイコンを選択すると表示される **「スケジュール・パラメータの編集」** アイコンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss04-05.png)
 
 1.  **「スケジュール・パラメータ」** ページが表示されます。
     ページの右下にある **「追加」** アイコンをクリックします。
 
+    ![Oracle Integration Cloud](images/ss04-06.png)
+
 1.  **「パラメータ名」** に `prefCode`、 **「値」** に `1` と入力します。
+
+    ![Oracle Integration Cloud](images/ss04-07.png)
 
     入力し終わったらページの右上にある **「閉じる」** ボタンをクリックします。
 
@@ -268,7 +326,11 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
     ロールが呼び出しに設定されている接続のリストが表示されます。
     **「REST」** をクリックして、『RESAS-API 呼び出しのための REST アダプタ接続』で作成した接続を見つけます。
 
+    ![Oracle Integration Cloud](images/ss05-01.png)
+
 1.  『RESAS-API 呼び出しのための REST アダプタ接続』で作成した接続を、キャンバス・ビューの **「スケジュール」** アイコンから **「停止」** アイコン（背景が緑色のアイコン）に向けられた矢印の上にドラッグし、表示された **「＋」** マークの上でドロップします。
+
+    ![Oracle Integration Cloud](images/ss05-02.png)
 
 1.  **「REST エンドポイントの構成」** ボックスが表示されます。
     **「基本情報」** では、次のように入力します。
@@ -281,6 +343,8 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
     | **「このエンドポイントのパラメータを追加して確認」** | チェックする |
     | **「このエンドポイントを構成してレスポンスを受信」** | チェックする |
 
+    ![Oracle Integration Cloud](images/ss05-03.png)
+
     入力したら、**「REST エンドポイントの構成」** ボックスの右上の方にある **「次」** ボタンをクリックします。
 
 1.  **「REST エンドポイントの構成」** ボックスの **「リクエスト・パラメータ」** では、RESAS-API を呼び出す際に指定する問合せパラメータを指定します。
@@ -291,10 +355,14 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
     | **「名前」** | `prefCode` |
     | **「データ型」** | **「integer」** を選択 |
 
+    ![Oracle Integration Cloud](images/ss05-04.png)
+
     入力し終わったら、**「次」** ボタンをクリックします。
 
 1.  **「REST エンドポイントの構成」** ボックスの **「レスポンス」** では、 REST-API から返ってくるレスポンスの形式を指定します。
     **「レスポンス・ペイロード」** で **「JSONサンプル」** を選択してから、 **「<<< inline >>>」** リンクをクリックします。
+
+    ![Oracle Integration Cloud](images/ss05-05.png)
 
 1.  **「REST エンドポイントの構成」** ボックスの **「Enter Sample JSON」** に、RESAS-API の市区町村一覧が返すレスポンスのサンプルを入力します。
     [RESAS-API の市区町村一覧のドキュメント](https://opendata.resas-portal.go.jp/docs/api/v1/cities.html) の **「sample」** セクションの JSON のコードブロックか、次のコードブロックをコピーして、**「Enter Sample JSON」** のテキストエリアに、ペーストします。
@@ -336,20 +404,30 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
     }
     ```
 
+    ![Oracle Integration Cloud](images/ss05-07.png)
+
     **「OK」** ボタンをクリックします。
 
 1.  **「REST エンドポイントの構成」** ボックスの右上にある **「次」** ボタンをクリックします。
 
+    ![Oracle Integration Cloud](images/ss05-08.png)
+
 1.  **「REST エンドポイントの構成」** ボックスの **「サマリー」** が表示されます。
     右上に表示される **「完了」** ボタンをクリックします。
 
+    ![Oracle Integration Cloud](images/ss05-09.png)
+
 1.  キャンバス・ビューは次の図のような表示になっています。
+
+    ![Oracle Integration Cloud](images/ss05-10.png)
 
     - **「マップ先 GetCities」** は、REST API のリクエストにパラメータを指定する必要がある場合に使用するマッピングです。
       このチュートリアルでは、スケジュール・パラメータ `prefCode` で指定した値を RESAS-API を呼び出す際に指定する問い合わせパラメータにマップする設定を行います。
     - **「GetCities」** は、これまでに設定した REST API の呼び出しの設定です。
 
 1.  キャンバス・ビューで **「マップ先 GetCities」** を選択し、表示された **「編集」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss05-11.png)
 
 1.  **「マップ先 GetCities」** ページが表示されます。
 
@@ -361,8 +439,17 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
 
 1.  **「Sources」** ツリーの **「$prefCode」** を、 **「Targets」** ツリーの **「prefCode」** の上にドラッグ＆ドロップします。
 
+    ![Oracle Integration Cloud](images/ss05-12.png)
+
     **「Sources」** ツリーの **「$prefCode」** を、 **「Targets」** ツリーの **「prefCode」** が直線で結ばれます。
-    ページの右上にある **「検証」** ボタンをクリックし、 **「マッピングは有効で、使用する準備ができています。」** というメッセージが表示されたら、 **「閉じる」** ボタンをクリックします。
+
+1.  ページの右上にある **「検証」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss05-13.png)
+
+1.  **「マッピングは有効で、使用する準備ができています。」** というメッセージが表示されたら、 **「閉じる」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss05-14.png)
 
 1.  これで、RESAS-API の市区町村一覧を取得するための設定が終わりました。
     ここまでの設定を保存するために、ページの右上に表示される **「保存」** ボタンをクリックします。
@@ -372,7 +459,11 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
 1.  キャンバス・ビューの右端に表示されている **「呼び出し」** アイコンをクリックします。
     **「Oracle ADW」** をクリックして、『Oracle ADW アダプタを使用した接続』で作成した接続を見つけます。
 
+    ![Oracle Integration Cloud](images/ss06-01.png)
+
 1.  『Oracle ADW アダプタを使用した接続』で作成した接続を、キャンバス・ビューの **「GetCities」** アイコンから **「停止」** アイコン（背景が緑色のアイコン）に向けられた矢印の上にドラッグし、表示された **「＋」** マークの上でドロップします。
+
+    ![Oracle Integration Cloud](images/ss06-02.png)
 
 1.  **「Oracle Adapter Configuration Wizard」** が表示されます。
     次のように **「基本情報」** を入力します。
@@ -383,6 +474,8 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
     | **「どの操作を実行しますか。」** | **「Perform an Operation on a Table」** を選択 |
     | **「どの操作を表で実行しますか。」** | **「Insert or Update (Merge)」** を選択 |
 
+    ![Oracle Integration Cloud](images/ss06-03.png)
+
     入力し終わったら、 **「次」** ボタンをクリックします。
 
 1.  **「Oracle Adapter Configuration Wizard」** の **「表での操作」** が表示されます。
@@ -390,15 +483,23 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
 
     **「使用可能」** リストに **「CITIES」** が表示されています。
     **「CITIES」** を選択した状態で、 **「>」** ボタンをクリックします。
-    **「CITIES」** が、 **「選択済み」** リストに異動したことを確認したら、 **「インポート」** ボタンをクリックします。
+    **「CITIES」** が、 **「選択済み」** リストに移動したことを確認したら、 **「インポート」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss06-04.png)
 
 1.  **「親データベース表の選択」** が表示されます。
     今回はデータを保存するのテーブルは `CITIES` だけなので、初期状態のままでウィザードの右上にある **「次」** ボタンをクリックします。
 
+    ![Oracle Integration Cloud](images/ss06-05.png)
+
 1.  **「Oracle Adapter Configuration Wizard」** の **「サマリー」** が表示されます。
     ウィザードの右上にある **「完了」** ボタンをクリックします。
 
+    ![Oracle Integration Cloud](images/ss06-06.png)
+
 1.  キャンバス・ビューは次の図のような表示になっています。
+
+    ![Oracle Integration Cloud](images/ss06-07.png)
 
     - **「マップ先 MergeCities」** は、 Oracle ADW に保存するデータのマッピングの設定を行います。
       次のセクションで設定します。
@@ -414,16 +515,24 @@ Oracle Integration Cloud の "統合" は、システム間の連携の流れを
 1.  キャンバス・ビューで、 **「マップ先 MergeCities」** を選択します。
     表示される **「編集」** アイコンをクリックします。
 
+    ![Oracle Integration Cloud](images/ss07-01.png)
+
 1.  データのマッピングの設定を行うためのマッパーが表示されます。
-    マッパーの画面左側に表示されている **「Sources」** ペインの **「$GetCities」** → **「executeResponse」** → **「response-wrapper」** → **「result」** と、画面右側に表示されている **「Target」** ペインの **「CitiesCollection」** → **「Cities」** にドラッグ＆ドロップします。
+    マッパーの画面左側に表示されている **「Sources」** ペインの **「$GetCities」** → **「executeResponse」** → **「response-wrapper」** → **「result」** を、画面右側に表示されている **「Target」** ペインの **「CitiesCollection」** → **「Cities」** にドラッグ＆ドロップします。
 
-1.  **「Sources」** ペインの **「$GetCities」** → **「executeResponse」** → **「response-wrapper」** → **「result」** → **「prefCode」** を、 **「Target」** ペインの **「CitiesCollection」** → **「Cities」** → **「prefCode」** にドラッグ＆ドロップします。
+    ![Oracle Integration Cloud](images/ss07-03.png)
 
-1.  **「Sources」** ペインの **「$GetCities」** → **「esecuteResponse」** → **「response-wrapper」** → **「result」** → **「cityCode」** を、 **「Target」** ペインの **「CitiesCollection」** → **「Cities」** → **「cityCode」** にドラッグ＆ドロップします。
+1.  **「Sources」** ペインの **「prefCode」** を、 **「Target」** ペインの **「prefCode」** にドラッグ＆ドロップします。
 
-1.  **「Sources」** ペインの **「$GetCities」** → **「esecuteResponse」** → **「response-wrapper」** → **「result」** → **「cityName」** を、 **「Target」** ペインの **「CitiesCollection」** → **「Cities」** → **「cityName」** にドラッグ＆ドロップします。
+    ![Oracle Integration Cloud](images/ss07-04.png)
 
-1.  **「Sources」** ペインの **「$GetCities」** → **「esecuteResponse」** → **「response-wrapper」** → **「result」** → **「bigCityFlag」** を、 **「Target」** ペインの **「CitiescturesCollection」** → **「Cities」** → **「bigCityFlag」** にドラッグ＆ドロップします。
+1.  **「Sources」** ペインの **「cityCode」** を、 **「Target」** ペインの **「cityCode」** にドラッグ＆ドロップします。
+
+1.  **「Sources」** ペインの **「cityName」** を、 **「Target」** ペインの **「cityName」** にドラッグ＆ドロップします。
+
+1.  **「Sources」** ペインの **「bigCityFlag」** を、 **「Target」** ペインの **「bigCityFlag」** にドラッグ＆ドロップします。
+
+    ![Oracle Integration Cloud](images/ss07-07.png)
 
 1.  画面左上にある **「検証」** ボタンをクリックして、マッピングが有効かどうかを確認します。
     画面の上部に **「マッピングは有効で使用する準備ができています。」** というメッセージが表示されたら、 **「閉じる」** ボタンをクリックします。
@@ -436,15 +545,23 @@ Oracle Integration Cloud では、作成した統合が実行状況をトラッ�
 1.  統合キャンバスの右上にあるアクション・アイコンをクリックします。
     表示されたメニューから **「トラッキング」** を選択します。
 
+    ![Oracle Integration Cloud](images/ss08-01.png)
+
 1.  **「トラッキング用のビジネス識別子」** ボックスが表示されます。
     ボックス左側のツリーから **「schedule」** の下の **「startTime」** を、ボックスの右側に表示されているテーブルの **「トラッキング・フィールド」** 列の1行目にドラッグ＆ドロップします。
 
+    ![Oracle Integration Cloud](images/ss08-02.png)
+
 1.  ボックス左側のツリーから **「$prefCode」** を、ボックスの右側に表示されているテーブルの **「トラッキング・フィールド」** 列の2行目にドラッグ＆ドロップします。
+
+    ![Oracle Integration Cloud](images/ss08-04.png)
 
     ボックスの右下にある **「閉じる」** ボタンをクリックします。
 
 1.  ページの右上にある **「保存」** ボタンをクリックしてから **「閉じる」** ボタンをクリックします。
     **「統合」** の一覧が表示されるページに戻ります。
+
+    ![Oracle Integration Cloud](images/ss08-06.png)
 
 ## 統合の実行
 
@@ -453,24 +570,60 @@ Oracle Integration Cloud では、作成した統合が実行状況をトラッ�
 1.  Oracle Integration Cloud で作成した統合を実行するには、まずアクティブ化します。
     実行する統合にマウスポインタを合わせ、表示された **「アクティブ化」** アイコンをクリックします。
 
+    ![Oracle Integration Cloud](images/ss09-01.png)
+
 1.  **「統合のアクティブ化」** ボックスが表示されます。
     ボックスの右下に表示されている **「アクティブ化」** ボタンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss09-02.png)
 
 1.  ページの右上にあるリフレッシュ・アイコンをクリックし、統合のステータスが **「アクティブ」** に変更されていることを確認します。
 
 1.  実行する統合にマウスポインタを合わせ、表示された **「実行」** アイコンをクリックします。
-    ポップアップの下に表示されている **「すぐに送信」** リンクをクリックします。
+
+    ![Oracle Integration Cloud](images/ss09-04.png)
+
+1.  ポップアップの下に表示されている **「すぐに送信」** リンクをクリックします。
+
+    ![Oracle Integration Cloud](images/ss09-05.png)
 
 1.  **「スケジュール・パラメータ」** ページが表示されます。
     今回はデフォルト値をそのまま使用することにして、ページの右上にある **「送信」** ボタンをクリックします。
 
-1.  ナビゲーション・ペインで **「<」** アイコンをクリックし、 **「Oracle Integration」** のメニューを表示させます。
-    **「モニタリング」** → **「統合」** → **「トラッキング」** を選択します。
+    ![Oracle Integration Cloud](images/ss09-07.png)
+
+    > ***Note:*** デフォルト値とは異なる値を設定する場合は **「新しい値」** に入力します。
+
+1.  ナビゲーション・ペインの左上にある **「<」** アイコンをクリックします。
+
+    ![Oracle Integration Cloud](images/ss09-09.png)
+
+    ナビゲーション・ペインに **「Oracle Integration」** のメニューが表示されたら、 **「モニタリング」** をクリックします。
+
+    ![Oracle Integration Cloud](images/ss09-10.png)
+
+    **「統合」** を選択します。
+
+    ![Oracle Integration Cloud](images/ss09-11.png)
+
+    **「トラッキング」** を選択します。
+
+    ![Oracle Integration Cloud](images/ss09-12.png)
 
 1.  **「インスタンスのトラッキング」** ページが表示されます。
+
+    ![Oracle Integration Cloud](images/ss09-13.png)
+
     ステータスが **「成功」** と表示されていることを確認します。
 
-1.  インスタンスにマウス・ポインタを合わせると表示される **「詳細の表示」** アイコンをクリックします。
-    アクティビティ・ストリームが表示され、処理の流れが確認できます。
+1.  インスタンスにマウス・ポインタを合わせると右側に表示される **「詳細の表示」** アイコンをクリックします。
+
+1.  ページの右上にある **「アクション」** アイコンをクリックし、表示されたメニューから **「アクティビティ・ストリーム」** を選択します。
+
+    ![Oracle Integration Cloud](images/ss09-14.png)
+
+1.  アクティビティ・ストリームが表示され、処理の流れが確認できます。
+
+    ![Oracle Integration Cloud](images/ss09-15.png)
 
 以上でこのチュートリアルは終了です。
