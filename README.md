@@ -105,8 +105,6 @@ REST アダプタ接続を作成する手順は次のとおりです。
     | **「接続タイプ」** | **「REST APIベースURL」** を選択 |
     | **「TLSバージョン」** | 入力しない |
     | **「接続URL」** | `https://opendata.resas-portal.go.jp/api/v1` |
-    | **「アウトバンド接続の双方向SSLの有効化」** | 入力しない |
-    | **「アイデンティティ・キーストア・エイリアス名」** | 入力しない |
 
     ![Oracle Integration Cloud](images/ss01-08.png)
 
